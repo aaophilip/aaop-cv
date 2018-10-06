@@ -1,0 +1,149 @@
+:root {
+  --bgc: teal;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 30px;
+  margin: 0;
+  border: 20px solid var(--bgc);
+  background: #99999900;
+  color: #242424;
+  line-height: 20px;
+  font-weight: 100;
+  min-width: 700px;
+}
+
+::selection {
+  background-color: #3f87a6;
+  caret: #0b9;
+}
+
+h3 {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  grid-gap: 20px;
+  align-items: center;
+  font-weight: normal;
+}
+
+h3:before,
+h3:after {
+  display: block;
+  content: '';
+  height: 10px;
+  background: linear-gradient(to var(--direction, left), var(--bgc), #3f87a6, #f69d3c 75%, #ebf8e1, transparent);
+}
+
+h3:after {
+  --direction: right;
+}
+
+.name {
+  font-size: 3em;
+  margin: 0;
+  padding: 0;
+  width: 50vw;
+  letter-spacing: 1px;
+}
+
+span.other-names {
+  font-style: italic;
+  white-space: nowrap;
+}
+
+.info {
+  text-align: right;
+  font-variant: small-caps;
+  font-style: italic;
+  line-height: 0.2em;
+  padding: 10px;
+}
+
+.end_item {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 100px 2fr 20px;
+}
+
+progress {
+  width: 200px;
+  height: 10px;
+  background-color: rgba(0, 128, 128, 0.75);
+}
+
+.languages>ul>li {
+  list-style-type: none;
+}
+
+.languages>ul>li:before {
+  margin-right: 20px;
+  content: "🔰";
+}
+
+.education {
+  line-height: 5px;
+}
+
+.education h5 {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.technical-skills {
+  line-height: 5px;
+}
+
+.personal-summary {
+  padding: 10px;
+}
+
+.personal-summary p {
+  line-height: 20px;
+}
+
+.work-experience {
+  padding: 10px;
+  margin-bottom: 50px;
+}
+
+#float {
+  margin-bottom: -10px;
+}
+
+.referees p {
+  margin-bottom: 0;
+}
+
+hr {
+  margin-left: -30px;
+  margin-right: -30px;
+  border: 20px solid var(--bgc);
+}
+
+.side-projects {
+  height: 0;
+}
+
+@media all and (max-width: 900px) {
+  .name {
+    font-size: 2em;
+    letter-spacing: 1px;
+  }
+}
+
+@media all and (max-width: 700px) {
+  .name {
+    font-size: 1.4em;
+    letter-spacing: 1px;
+  }
+}
