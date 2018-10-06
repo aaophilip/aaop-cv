@@ -136,7 +136,7 @@ hr {
 
 @media all and (max-width: 1200px) {
   .name {
-    font-size: 2em;
+    font-size: 3em;
     letter-spacing: -3px;
   }
 }
