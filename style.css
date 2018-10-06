@@ -134,16 +134,23 @@ hr {
   height: 0;
 }
 
+@media all and (max-width: 1200px) {
+  .name {
+    font-size: 2em;
+    letter-spacing: -3px;
+  }
+}
+
 @media all and (max-width: 900px) {
   .name {
     font-size: 2em;
-    letter-spacing: 1px;
+    letter-spacing: -1px;
   }
 }
 
 @media all and (max-width: 700px) {
   .name {
     font-size: 1.4em;
-    letter-spacing: 1px;
+    letter-spacing: -1px;
   }
 }
