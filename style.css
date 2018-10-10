@@ -157,7 +157,7 @@ hr {
     letter-spacing: -3px;
   }
   span.other-names {
-    padding-left: 0;
-    position: relative;
+    /* padding-left: 0;
+    position: relative; */
   }
 }
